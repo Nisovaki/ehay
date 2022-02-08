@@ -408,6 +408,10 @@ img {
   height: 28px;
 }
 
+.indend {
+  height: 1947px;
+}
+
 .navbar-wrapper {
   padding: 34px 0;
   display: -webkit-box;
@@ -820,5 +824,127 @@ img {
   height: 1px;
   background-color: #ECEEF2;
   margin-top: 79px;
+}
+
+.cooperation {
+  background-color: #B3BAC5;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.cooperation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cooperation-wrapper__block-1 {
+  width: 1053px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cooperation-wrapper__block-2 {
+  margin-top: 52px;
+  width: 1053px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cooperation__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Roboto Bold';
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 51px;
+  letter-spacing: -1.3px;
+}
+
+.cooperation-icon--w-1 {
+  width: 110px;
+  height: 32px;
+  margin-right: 8.1%;
+}
+
+.cooperation-icon--w-2 {
+  width: 96px;
+  height: 26px;
+  margin-right: 9%;
+}
+
+.cooperation-icon--w-3 {
+  width: 96px;
+  height: 25px;
+  margin-right: 9%;
+}
+
+.cooperation-icon--w-4 {
+  width: 96px;
+  height: 32px;
+  margin-right: 9%;
+}
+
+.cooperation-icon--w-5 {
+  width: 96px;
+  height: 30px;
+  margin-right: 8.9%;
+}
+
+.cooperation-icon--w-6 {
+  width: 96px;
+  height: 21px;
+}
+
+.cooperation-icon--w-7 {
+  width: 96px;
+  height: 26px;
+  margin-left: 0.5%;
+  margin-right: 9%;
+}
+
+.cooperation-icon--w-8 {
+  width: 96px;
+  height: 30px;
+  margin-right: 8.1%;
+}
+
+.cooperation-icon--w-9 {
+  width: 110px;
+  height: 32px;
+  margin-right: 8.5%;
+}
+
+.cooperation-icon--w-10 {
+  width: 96px;
+  height: 21px;
+  margin-right: 9%;
+}
+
+.cooperation-icon--w-11 {
+  width: 96px;
+  height: 25px;
+  margin-right: 9%;
+}
+
+.cooperation-icon--w-12 {
+  width: 96px;
+  height: 32px;
 }
 /*# sourceMappingURL=style.css.map */

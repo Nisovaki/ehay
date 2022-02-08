@@ -950,6 +950,7 @@ img {
 
 .blog {
   padding-top: 60px;
+  padding-bottom: 71px;
 }
 
 .blog-main {
@@ -1059,5 +1060,72 @@ img {
   text-transform: uppercase;
   margin-top: 17px;
   letter-spacing: -1.3px;
+}
+
+.stock {
+  position: relative;
+}
+
+.stock-wrapper {
+  background-color: #1565D8;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 59px;
+  padding-left: 61px;
+  padding-right: 61px;
+  padding-bottom: 81px;
+}
+
+.stock-wrapper__title {
+  font-family: 'Roboto Bold';
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  margin: 0;
+  width: 38%;
+  letter-spacing: -1.9px;
+}
+
+.stock-wrapper__block {
+  position: relative;
+  margin-top: 32px;
+}
+
+.stock-wrapper__input {
+  border-radius: 8px;
+  border: 1px solid #C3CAD9;
+  padding: 17px 208px 17px 49px;
+}
+
+.stock-wrapper__input:focus {
+  outline: none;
+}
+
+.stock-wrapper__icon {
+  position: absolute;
+  top: 39%;
+  left: 4.9%;
+  width: 16px;
+  height: 16px;
+}
+
+.stock-wrapper__button {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 13px 26px 13px 27px;
+  letter-spacing: 1px;
+  background-color: #FAAD13;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
 }
 /*# sourceMappingURL=style.css.map */

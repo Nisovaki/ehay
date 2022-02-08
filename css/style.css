@@ -947,4 +947,117 @@ img {
   width: 96px;
   height: 32px;
 }
+
+.blog {
+  padding-top: 60px;
+}
+
+.blog-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog__title {
+  font-family: 'Roboto Bold';
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -2.6px;
+}
+
+.blog__button {
+  padding: 9px 52px 9px 54px;
+  letter-spacing: -1.2px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.blog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-wrapper__item--w-1 {
+  -ms-flex-preferred-size: 51.5%;
+      flex-basis: 51.5%;
+}
+
+.blog-wrapper__item--W-2 {
+  -ms-flex-preferred-size: 48.5%;
+      flex-basis: 48.5%;
+}
+
+.blog-wrapper__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.blog-wrapper__subtitle {
+  font-family: 'Roboto Bold';
+  width: 63%;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 28px;
+  margin-bottom: 17px;
+  margin-left: 12px;
+  letter-spacing: -1.1px;
+}
+
+.blog-wrapper__text {
+  width: 90%;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5A7184;
+  margin-left: 13px;
+}
+
+.blog-wrapper__img {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 37px;
+}
+
+.blog-wrapper__item-img {
+  width: 558px;
+  height: 330px;
+  border-radius: 8px;
+}
+
+.blog-wrapper__date {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5A7184;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
+.blog-wrapper__title {
+  font-size: 22px;
+  line-height: 32px;
+  font-family: 'Roboto Medium';
+  width: 266px;
+  margin-top: 17px;
+  margin-bottom: 0;
+  letter-spacing: 0.2px;
+}
+
+.blog-wrapper__read {
+  font-family: 'Roboto Bold';
+  font-size: 16px;
+  line-height: 20px;
+  color: #1565D8;
+  text-transform: uppercase;
+  margin-top: 17px;
+  letter-spacing: -1.3px;
+}
 /*# sourceMappingURL=style.css.map */

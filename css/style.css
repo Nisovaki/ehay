@@ -372,6 +372,7 @@ template {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #183B56;
 }
 
 .container {
@@ -877,73 +878,73 @@ img {
   letter-spacing: -1.3px;
 }
 
-.cooperation-icon--w-1 {
+.cooperation-icon-1 {
   width: 110px;
   height: 32px;
   margin-right: 8.1%;
 }
 
-.cooperation-icon--w-2 {
+.cooperation-icon-2 {
   width: 96px;
   height: 26px;
   margin-right: 9%;
 }
 
-.cooperation-icon--w-3 {
+.cooperation-icon-3 {
   width: 96px;
   height: 25px;
   margin-right: 9%;
 }
 
-.cooperation-icon--w-4 {
+.cooperation-icon-4 {
   width: 96px;
   height: 32px;
   margin-right: 9%;
 }
 
-.cooperation-icon--w-5 {
+.cooperation-icon-5 {
   width: 96px;
   height: 30px;
   margin-right: 8.9%;
 }
 
-.cooperation-icon--w-6 {
+.cooperation-icon-6 {
   width: 96px;
   height: 21px;
 }
 
-.cooperation-icon--w-7 {
+.cooperation-icon-7 {
   width: 96px;
   height: 26px;
   margin-left: 0.5%;
   margin-right: 9%;
 }
 
-.cooperation-icon--w-8 {
+.cooperation-icon-8 {
   width: 96px;
   height: 30px;
   margin-right: 8.1%;
 }
 
-.cooperation-icon--w-9 {
+.cooperation-icon-9 {
   width: 110px;
   height: 32px;
   margin-right: 8.5%;
 }
 
-.cooperation-icon--w-10 {
+.cooperation-icon-10 {
   width: 96px;
   height: 21px;
   margin-right: 9%;
 }
 
-.cooperation-icon--w-11 {
+.cooperation-icon-11 {
   width: 96px;
   height: 25px;
   margin-right: 9%;
 }
 
-.cooperation-icon--w-12 {
+.cooperation-icon-12 {
   width: 96px;
   height: 32px;
 }
@@ -985,12 +986,12 @@ img {
   display: flex;
 }
 
-.blog-wrapper__item--w-1 {
+.blog-wrapper__item-1 {
   -ms-flex-preferred-size: 51.5%;
       flex-basis: 51.5%;
 }
 
-.blog-wrapper__item--W-2 {
+.blog-wrapper__item-2 {
   -ms-flex-preferred-size: 48.5%;
       flex-basis: 48.5%;
 }
@@ -1127,5 +1128,171 @@ img {
   position: absolute;
   right: 4px;
   top: 4px;
+}
+
+.footer {
+  padding-top: 108px;
+}
+
+.footer__logo {
+  margin-left: 3px;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 68px;
+}
+
+.footer-wrapper__text {
+  margin-top: 25px;
+  margin-left: 3px;
+  margin-bottom: 30px;
+  width: 240px;
+  font-size: 15px;
+  line-height: 28px;
+  color: #5A7184;
+}
+
+.footer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3px;
+}
+
+.footer__icon-wrapper {
+  width: 42px;
+  height: 40px;
+  background-color: #f8f8f9;
+  border-radius: 50%;
+  padding: 12px 11px 10px 13px;
+  margin-right: 6px;
+}
+
+.footer__icon-google {
+  width: 16px;
+  height: 18px;
+}
+
+.footer__icon-twitter {
+  width: 16px;
+  height: 18px;
+}
+
+.footer__icon-instagram {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__icon-linkedIn {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__product {
+  margin-left: 52px;
+}
+
+.footer__product-title {
+  letter-spacing: 0.9px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.footer__product-item {
+  margin-bottom: 28px;
+}
+
+.footer__services {
+  margin-left: 82px;
+}
+
+.footer__services-title {
+  letter-spacing: 0.9px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.footer__services-item {
+  margin-bottom: 28px;
+}
+
+.footer__company {
+  margin-left: 82px;
+}
+
+.footer__company-title {
+  letter-spacing: 0.9px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.footer__company-item {
+  margin-bottom: 28px;
+}
+
+.footer__still {
+  margin-left: 94px;
+}
+
+.footer__still-title {
+  letter-spacing: 0.9px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.footer__still-item {
+  margin-bottom: 28px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-heart__img {
+  width: 56px;
+  height: 56px;
+  margin-left: 2px;
+}
+
+.footer-heart__text {
+  margin-top: 26px;
+  margin-left: 6px;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5A7184;
 }
 /*# sourceMappingURL=style.css.map */

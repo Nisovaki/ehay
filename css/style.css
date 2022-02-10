@@ -414,7 +414,7 @@ img {
 }
 
 .swiper-button-disabled {
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .navbar-wrapper {
@@ -833,32 +833,32 @@ img {
   margin-bottom: 61px;
 }
 
-.unreleased-slider {
+.card-slider {
   position: relative;
 }
 
-.unreleased__slide {
+.card__slide {
   background-color: #fff;
   border: 1px solid #ECEEF2;
   border-radius: 8px;
   height: 240px;
 }
 
-.unreleased-wrapper {
+.card-wrapper {
   position: relative;
 }
 
-.unreleased__item {
+.card__item {
   text-align: center;
   margin-top: 40px;
 }
 
-.unreleased__item-img {
+.card__item-img {
   width: 64px;
   height: 64px;
 }
 
-.unreleased__title {
+.card__title {
   text-align: center;
   font-size: 22px;
   line-height: 32px;
@@ -868,7 +868,7 @@ img {
   margin-bottom: 0;
 }
 
-.unreleased__text {
+.card__text {
   text-align: center;
   font-size: 16px;
   line-height: 22px;
@@ -877,7 +877,7 @@ img {
   margin-bottom: 0;
 }
 
-.unreleased-button {
+.card-button {
   z-index: 555;
   position: absolute;
   cursor: pointer;
@@ -894,16 +894,16 @@ img {
           box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
 }
 
-.unreleased-button-prev {
+.card-button-prev {
   top: 49%;
   left: -25px;
-  background-image: url(../img/trends/unreleased/prev.svg);
+  background-image: url(../img/trends/card/prev.svg);
 }
 
-.unreleased-button-next {
+.card-button-next {
   top: 50%;
   right: -29px;
-  background-image: url(../img/trends/unreleased/next.svg);
+  background-image: url(../img/trends/card/next.svg);
 }
 
 .swiper {

@@ -1,0 +1,228 @@
+.trends
+  padding-top: 50px
+  padding-bottom: 50px
+  &-wrapper
+    display: flex
+    align-items: flex-start
+  &-reference
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    width: 77.5%
+    &__title
+      font-family: 'Roboto Bold'
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      letter-spacing: -2.2px
+      margin-top: 0
+      margin-bottom: 30px
+      margin-left: 2px
+    &__wrapper
+      display: flex
+      flex-wrap: wrap
+      margin-left: 2px
+    &__item
+      display: flex
+      width: 358px
+      border: 1px solid $border-colors
+      border-radius: 8px
+      padding: 11px 11px 11px 11px
+      margin-bottom: 30px
+      margin-right: 32px
+      &:nth-child(5)
+        margin-bottom: 25px
+      &:nth-child(6)
+        margin-bottom: 25px
+    &__img
+      width: 160px
+      height: 238px
+      margin-right: 20px
+    &__price
+      flex-basis: 100%
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      font-family: 'Roboto Bold'
+      margin-top: 0
+      margin-bottom: 23px
+      color: $button-colors
+      letter-spacing: -1.2px
+      &-img
+        width: 18px
+        height: 21px
+        margin-top: 11px
+    &__subtitle
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      font-family: 'Roboto Medium'
+      letter-spacing: 0.2px
+      color: $title-colors
+      margin-top: 12px
+      margin-bottom: 16px
+    &__text
+      font-size: 16px
+      line-height: 22px
+      flex-basis: 100%
+      margin-top: 0
+      margin-bottom: 24px
+    &__button
+      font-family: 'Roboto Bold'
+      font-size: 16px
+      line-height: 20px
+      text-transform: uppercase
+      color: $button-colors
+      background-color: $btn-trends-colors
+      border: none
+      border-radius: 8px
+      padding: 24px 283px 27px 287px
+      letter-spacing: -1.2px
+      cursor: pointer
+  &-price
+    display: flex
+    justify-content: space-between
+    width: 141px
+  &__btn
+    &-price
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      color: $btn-text-colors
+      background-color: $title-colors
+      border-radius: 2000px
+      padding: 6px 21px 6px 18px
+      margin-left: -3px
+      letter-spacing: 0.66px
+      cursor: pointer
+      &--ml-1
+        margin-left: 1px
+      &--ml-2
+        margin-left: 0px
+      &--ml-3
+        margin-top: 3px
+        margin-left: 1px
+      &--ml-4
+        margin-top: 2px
+        margin-left: 1px
+      &--ml-5    
+        margin-top: 3px
+        margin-left: 1px
+  &-top
+    width: 31.3%
+    &-wrapper
+      background-color: $book-colors
+      border-radius: 8px
+      padding: 24px 24px 0 24px 
+    &__title
+      font-family: 'Roboto Bold'
+      margin-top: 0
+      font-size: 32px
+      line-height: 40px
+      letter-spacing: -1.8px
+      margin-left: -2px
+      margin-bottom: 30px
+    &__item
+      display: flex
+      margin-bottom: 36px
+      &:nth-child(4)
+        margin-bottom: 26px
+    &__subtitle
+      font-family: 'Roboto Medium'
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      width: 166px
+      margin-top: 10px
+      margin-bottom: 14px
+    &__price
+      margin-top: 0
+      font-size: 20px
+      line-height: 24px
+      color: $button-colors
+      font-family: 'Roboto Bold'
+      letter-spacing: -1.2px
+      margin-bottom: 21px
+    &__btn
+      padding: 6px 16px 6px 20px
+      letter-spacing: 1.6px
+    &__img
+      width: 120px
+      height: 178px
+      margin-right: 26px
+    &__button
+      font-family: 'Roboto Bold'
+      padding: 24px 98px 25px 99px
+      border: none
+      border-top: 1px solid #ECEEF2
+      background-color: $book-colors
+      font-size: 16px
+      line-height: 20px
+      color: $button-colors
+      text-transform: uppercase
+      letter-spacing: -1.1px
+      cursor: pointer
+  &-line
+    width: 1140px
+    height: 1px
+    background-color: $border-colors
+    margin-top: 79px
+
+.unreleased
+  &__slide
+    overflow: hidden
+    border: 1px solid $border-colors
+    border-radius: 8px
+    width: 265px
+    height: 240px
+  &-wrapper
+    position: relative
+    z-index: 999
+  &__item
+    text-align: center
+    margin-top: 40px
+    &-img
+      width: 64px
+      height: 64px
+  &__title
+    text-align: center
+    font-size: 22px
+    line-height: 32px
+    font-family: 'Roboto Medium'
+  &__text
+    text-align: center
+    font-size: 16px
+    line-height: 22px
+    color: $text-colors
+  &-button
+      cursor: pointer
+    &-prev
+      position: absolute
+      top: 50%
+      left: -29px
+      transform: translateY(-50%)
+      background-image: url(../img/trends/unreleased/prev.svg)
+      background-repeat: no-repeat
+      background-position: 50%
+      width: 56px
+      height: 56px
+      background-color: #fff
+      border-radius: 50%
+      border: none
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+    &-next
+      cursor: pointer
+      position: absolute
+      top: 50%
+      right: -29px
+      transform: translateY(-50%)
+      background-image: url(../img/trends/unreleased/next.svg)
+      background-repeat: no-repeat
+      background-position: 50%
+      width: 56px
+      height: 56px
+      background-color: #fff
+      border: none
+      border-radius: 50%
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+

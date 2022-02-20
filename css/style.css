@@ -937,7 +937,7 @@ img {
 }
 
 .card {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .card-slider {
@@ -1709,6 +1709,25 @@ img {
   .card-button-next {
     right: -16px;
   }
+  .history-block {
+    margin-left: 29px;
+    width: 97.5%;
+  }
+  .history__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .history__item {
+    width: 952px;
+  }
+  .history__item-img {
+    width: 305px;
+    height: 190px;
+  }
+  .history__item-img-1 {
+    width: 950px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1820,6 +1839,42 @@ img {
   }
   .card-button__slide {
     width: 206px;
+  }
+  .history-block {
+    margin-left: 10%;
+    width: 85.5%;
+  }
+  .history-block__title {
+    font-size: 36px;
+  }
+  .history-block__text {
+    width: 317px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-right: 0px;
+  }
+  .history__list:nth-child(3) {
+    display: none;
+  }
+  .history__item {
+    width: 80%;
+  }
+  .history__item-img {
+    width: 300px;
+    height: 70%;
+  }
+  .history__item-img-1 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .history__subtitle {
+    font-size: 19px;
+  }
+  .history__text {
+    font-size: 14px;
   }
 }
 
@@ -1973,6 +2028,9 @@ img {
   .trends-line {
     margin-bottom: 55px;
   }
+  .card {
+    padding-bottom: -60px;
+  }
   .card-wrapper {
     position: relative;
     display: -ms-grid;
@@ -2040,7 +2098,7 @@ img {
     grid-area: 1 / 1 / 2 / 2;
   }
   .card-button {
-    bottom: -20%;
+    bottom: -15%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -2054,6 +2112,35 @@ img {
   }
   .button-block {
     width: 95%;
+  }
+  .unreleased__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .history {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .history-block {
+    margin-left: 0;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .history-block__title {
+    margin-bottom: 15px;
+  }
+  .history-block__text {
+    text-align: center;
   }
 }
 
@@ -2235,30 +2322,43 @@ img {
             transform: translateX(-50%);
   }
   .card-button-prev {
-    bottom: -21.5%;
+    bottom: -14.5%;
     left: 40%;
   }
   .card-button-next {
-    bottom: -22%;
+    bottom: -14.5%;
     right: 27%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
-    max-width: 88%;
+    max-width: 87%;
   }
   .navbar-wrapper {
     padding: 18px 0;
   }
   .card {
-    margin-left: -2px;
-    margin-right: -12px;
+    padding-bottom: 70px;
+  }
+  .card-wrapper {
+    justify-items: end;
+    margin-left: 4px;
+  }
+  .card-swiper {
+    margin-left: -4px;
   }
   .card__slide {
     width: 90% !important;
     height: 182px !important;
-    margin-right: 10px;
+    margin-right: 1px;
+  }
+  .card__slide:nth-child(odd) {
+    width: 102% !important;
+  }
+  .card__slide:nth-child(even) {
+    margin-right: 6px;
+    margin-left: -11px;
   }
   .card__item {
     margin-top: 19px;
@@ -2276,7 +2376,7 @@ img {
     margin-top: 11px;
   }
   .card__text {
-    width: 80%;
+    width: 78%;
     margin: auto;
     margin-top: 9px;
   }
@@ -2293,11 +2393,32 @@ img {
   }
   .card-button-prev {
     bottom: -21.5%;
-    left: 37%;
+    left: 40%;
   }
   .card-button-next {
     bottom: -22%;
-    right: 28%;
+    right: 22%;
+  }
+  .unreleased {
+    padding-top: 43px;
+    padding-bottom: 136px;
+  }
+  .unreleased__title {
+    font-size: 28px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .unreleased__button {
+    width: 48px;
+    height: 48px;
+    top: auto;
+    bottom: -89px;
+  }
+  .unreleased__button--prev {
+    right: 53.5%;
+  }
+  .unreleased__button--next {
+    left: 53%;
   }
 }
 /*# sourceMappingURL=style.css.map */

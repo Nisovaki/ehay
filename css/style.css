@@ -1709,9 +1709,12 @@ img {
   .card-button-next {
     right: -16px;
   }
+  .history-container {
+    max-width: 993px;
+  }
   .history-block {
     margin-left: 29px;
-    width: 97.5%;
+    width: 96.5%;
   }
   .history__wrapper {
     -webkit-box-align: center;
@@ -1719,14 +1722,14 @@ img {
             align-items: center;
   }
   .history__item {
-    width: 952px;
+    width: 940px;
   }
   .history__item-img {
     width: 305px;
     height: 190px;
   }
   .history__item-img-1 {
-    width: 950px;
+    width: 940px;
   }
 }
 
@@ -1840,9 +1843,13 @@ img {
   .card-button__slide {
     width: 206px;
   }
+  .history-container {
+    max-width: 100%;
+  }
   .history-block {
-    margin-left: 10%;
-    width: 85.5%;
+    width: 710px;
+    margin: auto;
+    margin-bottom: 19px;
   }
   .history-block__title {
     font-size: 36px;
@@ -1853,28 +1860,42 @@ img {
     line-height: 25px;
     margin-right: 0px;
   }
-  .history__list:nth-child(3) {
-    display: none;
+  .history__wrapper {
+    position: relative;
+    padding-bottom: 550px;
+  }
+  .history__list {
+    position: relative;
+  }
+  .history__list-block {
+    width: 220px;
+    position: absolute;
+    top: 475px;
+    left: -46px;
   }
   .history__item {
-    width: 80%;
+    width: 511px;
+    margin-left: -129px;
   }
   .history__item-img {
-    width: 300px;
-    height: 70%;
+    position: absolute;
+    -webkit-transform: translateX(-21%);
+            transform: translateX(-21%);
+    top: 330px;
+    width: 223px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .history__item-img-1 {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
-  }
-  .history__subtitle {
-    font-size: 19px;
-  }
-  .history__text {
-    font-size: 14px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+    width: 735px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -2141,6 +2162,28 @@ img {
   }
   .history-block__text {
     text-align: center;
+    width: 215px;
+  }
+  .history__list:nth-child(3) {
+    display: none;
+  }
+  .history__list-block {
+    top: 495px;
+    left: -54px;
+    width: 260px;
+    margin-bottom: 22px;
+  }
+  .history__item {
+    width: 279px;
+    margin-left: -152px;
+  }
+  .history__item-img-1 {
+    width: 540px;
+  }
+  .history__item-img {
+    top: 325px;
+    width: 260px;
+    height: 170px;
   }
 }
 
@@ -2329,6 +2372,45 @@ img {
     bottom: -14.5%;
     right: 27%;
   }
+  .history {
+    padding-top: 60px;
+  }
+  .history__wrapper {
+    padding-bottom: 590px;
+  }
+  .history__list-block {
+    left: -45px;
+    width: 215px;
+  }
+  .history__list-text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .history__item {
+    width: 233px;
+    margin-left: -128px;
+  }
+  .history__item-img-1 {
+    width: 450px;
+  }
+  .history__item-img {
+    width: 218px;
+  }
+  .history__subtitle {
+    font-size: 25px;
+    position: relative;
+  }
+  .history__text {
+    text-align: center;
+  }
+  .history__link {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2419,6 +2501,65 @@ img {
   }
   .unreleased__button--next {
     left: 53%;
+  }
+  .history {
+    padding-top: 46px;
+  }
+  .history__wrapper {
+    padding-bottom: 425px;
+  }
+  .history-block {
+    margin-bottom: 35px;
+  }
+  .history-block__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1.9px;
+    margin-bottom: 23px;
+  }
+  .history-block__text {
+    font-size: 18px;
+    line-height: 25px;
+    width: 265px;
+  }
+  .history__list-block {
+    width: 140px;
+    top: 364px;
+    left: -30px;
+  }
+  .history__list-block-ml-1 {
+    left: -22px;
+  }
+  .history__item {
+    width: 152px;
+    margin-left: -93px;
+  }
+  .history__item-img-1 {
+    width: 301px;
+    left: 49%;
+    height: 210px;
+    margin-bottom: 0;
+  }
+  .history__item-img {
+    width: 140px;
+    height: 138px;
+    top: 230px;
+  }
+  .history__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .history__text {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 7px;
+  }
+  .history__img {
+    margin-top: 0px;
+    width: 11px;
+  }
+  .video-play-3 {
+    margin-left: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

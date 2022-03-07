@@ -1733,17 +1733,11 @@ img {
   }
   .cooperation-wrapper__block-1 {
     width: 900px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .cooperation-wrapper__block-2 {
     width: 900px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
-  .cooperation-icon-1, .cooperation-icon-2, .cooperation-icon-3, .cooperation-icon-4, .cooperation-icon-5, .cooperation-icon-6, .cooperation-icon-7, .cooperation-icon-8, .cooperation-icon-9, .cooperation-icon-10, .cooperation-icon-11, .cooperation-icon-12 {
+  .cooperation-wrapper-icon-1, .cooperation-wrapper-icon-2, .cooperation-wrapper-icon-3, .cooperation-wrapper-icon-4, .cooperation-wrapper-icon-5, .cooperation-wrapper-icon-6, .cooperation-wrapper-icon-7, .cooperation-wrapper-icon-8, .cooperation-wrapper-icon-9, .cooperation-wrapper-icon-10, .cooperation-wrapper-icon-11, .cooperation-wrapper-icon-12 {
     margin-right: 0;
   }
 }
@@ -1911,12 +1905,6 @@ img {
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .cooperation-wrapper__block-1 {
-    width: 720px;
-  }
-  .cooperation-wrapper__block-2 {
-    width: 720px;
   }
 }
 
@@ -2205,34 +2193,6 @@ img {
     top: 325px;
     width: 260px;
     height: 170px;
-  }
-  .cooperation {
-    padding-bottom: 80px;
-  }
-  .cooperation__title {
-    letter-spacing: -0.9px;
-    width: 401px;
-    margin: 0 auto 51px auto;
-  }
-  .cooperation-wrapper__block-1 {
-    width: 397px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .cooperation-wrapper__block-2 {
-    display: none;
-  }
-  .cooperation-icon-4 {
-    margin-top: 30px;
-  }
-  .cooperation-icon-5 {
-    margin-top: 30px;
-  }
-  .cooperation-icon-6 {
-    margin-top: 30px;
   }
 }
 
@@ -2553,7 +2513,6 @@ img {
   }
   .history {
     padding-top: 46px;
-    padding-bottom: 78px;
   }
   .history__wrapper {
     padding-bottom: 425px;
@@ -2610,54 +2569,6 @@ img {
   }
   .video-play-3 {
     margin-left: 8px;
-  }
-  .cooperation {
-    padding-top: 37px;
-    padding-bottom: 60px;
-  }
-  .cooperation__title {
-    letter-spacing: -1.4px;
-    width: 270px;
-    font-size: 24px;
-    line-height: 30px;
-    margin: 0;
-    margin-bottom: 28px;
-  }
-  .cooperation-wrapper__block-1 {
-    width: 226px;
-  }
-  .cooperation-icon-1 {
-    width: 101px;
-    height: 30px;
-  }
-  .cooperation-icon-2 {
-    width: 87px;
-    height: 23px;
-    margin-right: 6px;
-  }
-  .cooperation-icon-3 {
-    width: 87px;
-    height: 23px;
-    margin-top: 20px;
-    margin-left: 7px;
-  }
-  .cooperation-icon-4 {
-    width: 88px;
-    height: 30px;
-    margin-top: 22px;
-    margin-right: 6px;
-  }
-  .cooperation-icon-5 {
-    width: 87px;
-    height: 25px;
-    margin-top: 22px;
-    margin-left: 7px;
-  }
-  .cooperation-icon-6 {
-    width: 87px;
-    height: 18px;
-    margin-top: 26px;
-    margin-right: 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */

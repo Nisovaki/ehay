@@ -1411,7 +1411,8 @@ img {
 }
 
 .stock-wrapper {
-  background-color: #1565D8;
+  background-image: url(../img/stock/fon.png);
+  background-repeat: no-repeat;
   border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1762,6 +1763,21 @@ img {
     width: 250px;
     font-size: 20px;
   }
+  .stock {
+    padding-bottom: 10px;
+  }
+  .stock-wrapper {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .stock-wrapper__input {
+    padding: 17px 175px 17px 49px;
+  }
+  .stock-wrapper__title {
+    width: 47%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1968,11 +1984,41 @@ img {
     width: 540px;
     margin: auto;
   }
+  .stock-wrapper {
+    background-size: cover;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .stock-wrapper__title {
+    width: 60%;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .stock-wrapper__input {
+    width: 550px;
+    height: 120px;
+    padding: 17px 3% 81px 49px;
+  }
+  .stock-wrapper__icon {
+    top: 17%;
+  }
+  .stock-wrapper__button {
+    padding: 13px 38% 13px 38%;
+    right: 14px;
+    bottom: 8px;
+    top: auto;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
-    width: 92%;
+    max-width: 92%;
   }
   .navbar-block {
     display: -webkit-box;
@@ -2283,6 +2329,32 @@ img {
   }
   .cooperation-icon-6 {
     margin-top: 30px;
+  }
+  .stock-container {
+    margin: 0;
+    min-width: 100%;
+  }
+  .stock-wrapper {
+    width: 100%;
+    border-radius: 0;
+    margin: auto;
+  }
+  .stock-wrapper__block {
+    width: 100%;
+  }
+  .stock-wrapper__title {
+    width: 330px;
+  }
+  .stock-wrapper__input {
+    width: 100%;
+  }
+  .stock-wrapper__icon {
+    left: 25px;
+  }
+  .stock-wrapper__button {
+    padding: 13px 23% 13px 23%;
+    right: 3%;
+    left: 3%;
   }
 }
 
@@ -2807,6 +2879,35 @@ img {
     margin-top: 6px;
     font-size: 10px;
     line-height: 20px;
+  }
+  .stock {
+    padding-top: 29px;
+  }
+  .stock-wrapper {
+    padding-top: 25px;
+    padding-left: 23px;
+    padding-right: 25px;
+    padding-bottom: 28px;
+  }
+  .stock-wrapper__title {
+    letter-spacing: -1.7px;
+    width: 205px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .stock-wrapper__icon {
+    left: 21px;
+    top: 18%;
+  }
+  .stock-wrapper__input {
+    padding: 19px 15px 75px 49px;
+    height: 112px;
+  }
+  .stock-wrapper__button {
+    padding: 11px 22% 11px 23%;
+    bottom: 11px;
+    right: 4%;
+    left: 4%;
   }
 }
 /*# sourceMappingURL=style.css.map */

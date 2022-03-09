@@ -171,32 +171,8 @@ $(document).ready(function () {
     document.querySelector(".navbar-wrapper__block").classList.toggle('navbar-wrapper__block--mobile_visible');
   });
 
-  var modalButton = $("[data-toggle=modal]");
-  var closeModalButton = $(".modal__close");
-  modalButton.on("click", openModal);
-  closeModalButton.on("click", closeModal);
+
+
+
   
-  function openModal() {
-    var targetModal = $(this).attr("data-href");
-    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
-    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
-  };
-
-  function closeModal(event) {
-    event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass("modal__dialog--visible");
-  };
-
-  $(document).keydown(function (event) {
-    if (event.keyCode == 27) {
-      $(".modal__overlay").removeClass("modal__overlay--visible");
-      $(".modal__dialog").removeClass("modal__dialog--visible");
-    }
-  });
-
-
-
 });

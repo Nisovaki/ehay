@@ -1,0 +1,84 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(186, 186, 186, 0.555)
+    z-index: 100
+    visibility: hidden
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    min-height: 487px
+    max-width: 100%
+    padding: 31px 89px 31px 89px
+    background-color: $book-colors
+    transform: translate(-50%, -50%)
+    color: $btn-text-colors
+    border-radius: 8px
+    z-index: 110
+    visibility: hidden
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    font-family: 'Roboto Bold'
+    text-align: center
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 15px
+    color: $title-colors
+  &__message
+    width: 100%
+    min-height: 123px
+    margin-top: 15px
+    margin-bottom: 13px
+  &__form
+    max-width: 302px
+    min-width: 302px
+  &-wrapper
+    position: relative
+  &__input
+    flex-basis: 100%
+    width: 100%
+    margin-top: 15px 
+  &__button
+    text-transform: uppercase
+    font-size: 16px
+    border: 0
+    color: $btn-text-colors
+    width: 150px
+    height: 45px
+    background-color: $button-colors
+    border-radius: 4px
+    font-weight: bold
+    &:hover
+      background-color: $title-color-head
+    &:active
+      background-color: $button-colors
+    &-block
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &__info
+    font-style: normal
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    color: $border-input

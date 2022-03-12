@@ -213,6 +213,10 @@ $(document).ready(function () {
           required: true,
           email: true,
         },
+        phone: {
+          required: true,
+          minlength: 18,
+        },
         phoneModal: {
           required: true,
           minlength: 18,
@@ -225,18 +229,18 @@ $(document).ready(function () {
         },
         phoneModal: {
           required: "Пожалуйста введите свой телефон",
-          minlength: "Минимум 10 цифр",
+          minlength: "Минимум",
         },
         email: {
-          required: "Пожалуйста введите свой Email",
+          required: "We need your email address to contact",
         },
         emailModal: {
-          required: "Пожалуйста введите свой Email",
+          required: "We need your email address to contact",
         },
       },
     });
   });
 
-  $(".phone").mask("+7 (000) 000-00-00");
+
 
 });

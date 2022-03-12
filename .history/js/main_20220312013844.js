@@ -229,9 +229,11 @@ $(document).ready(function () {
         },
         email: {
           required: "Пожалуйста введите свой Email",
+          minlength: "Ошибка отсутс",
         },
         emailModal: {
           required: "Пожалуйста введите свой Email",
+          minlength: "Ошибка отсутс",
         },
       },
     });

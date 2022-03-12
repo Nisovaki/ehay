@@ -228,15 +228,15 @@ $(document).ready(function () {
           minlength: "Минимум 10 цифр",
         },
         email: {
-          required: "Пожалуйста введите свой Email",
+          required: "Пожалуйста введите свой ",
         },
         emailModal: {
-          required: "Пожалуйста введите свой Email",
+          required: "We need your email address to contact",
         },
       },
     });
   });
 
-  $(".phone").mask("+7 (000) 000-00-00");
+
 
 });

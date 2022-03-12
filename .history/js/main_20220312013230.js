@@ -201,6 +201,10 @@ $(document).ready(function () {
     $(this).validate({
       errorClass: "invalid",
       rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
         nameModal: {
           required: true,
           minlength: 2,
@@ -213,6 +217,10 @@ $(document).ready(function () {
           required: true,
           email: true,
         },
+        phone: {
+          required: true,
+          minlength: 18,
+        },
         phoneModal: {
           required: true,
           minlength: 18,
@@ -223,20 +231,24 @@ $(document).ready(function () {
           required: "Пожалуйста введите свое имя",
           minlength: "Минимум 2 бкувы",
         },
+        phone: {
+          required: "We also need your phone number",
+          minlength: "At least ten numbers",
+        },
         phoneModal: {
-          required: "Пожалуйста введите свой телефон",
-          minlength: "Минимум 10 цифр",
+          required: "We also need your phone number",
+          minlength: "At least ten numbers",
         },
         email: {
-          required: "Пожалуйста введите свой Email",
+          required: "We need your email address to contact",
         },
         emailModal: {
-          required: "Пожалуйста введите свой Email",
+          required: "We need your email address to contact",
         },
       },
     });
   });
 
-  $(".phone").mask("+7 (000) 000-00-00");
+
 
 });

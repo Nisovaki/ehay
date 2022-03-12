@@ -231,12 +231,12 @@ $(document).ready(function () {
           required: "Пожалуйста введите свой Email",
         },
         emailModal: {
-          required: "Пожалуйста введите свой Email",
+          required: "We need your email address to contact",
         },
       },
     });
   });
 
-  $(".phone").mask("+7 (000) 000-00-00");
+
 
 });

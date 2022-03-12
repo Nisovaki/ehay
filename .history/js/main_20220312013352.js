@@ -225,18 +225,18 @@ $(document).ready(function () {
         },
         phoneModal: {
           required: "Пожалуйста введите свой телефон",
-          minlength: "Минимум 10 цифр",
+          minlength: "At least ten numbers",
         },
         email: {
-          required: "Пожалуйста введите свой Email",
+          required: "We need your email address to contact",
         },
         emailModal: {
-          required: "Пожалуйста введите свой Email",
+          required: "We need your email address to contact",
         },
       },
     });
   });
 
-  $(".phone").mask("+7 (000) 000-00-00");
+
 
 });

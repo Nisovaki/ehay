@@ -343,7 +343,7 @@ template {
 
 @font-face {
   font-family: 'Roboto Bold';
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("/fonts/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto-Bold.woff") format("woff");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("/ehay/fonts/Roboto-Bold.woff2") format("woff2"), url("/ehay/fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -351,7 +351,7 @@ template {
 
 @font-face {
   font-family: 'Roboto Medium';
-  src: local("Roboto Medium"), local("Roboto-Medium"), url("/fonts/Roboto-Medium.woff2") format("woff2"), url("/fonts/Roboto-Medium.woff") format("woff");
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("/ehay/fonts/Roboto-Medium.woff2") format("woff2"), url("/ehay/fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -359,7 +359,7 @@ template {
 
 @font-face {
   font-family: 'Open Sans';
-  src: local("Open Sans"), local("OpenSans"), url("/fonts/OpenSans.woff2") format("woff2"), url("/fonts/OpenSans.woff") format("woff");
+  src: local("Open Sans"), local("OpenSans"), url("/ehay/fonts/OpenSans.woff2") format("woff2"), url("/ehay/fonts/OpenSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -404,6 +404,12 @@ img {
   border: 2px solid #fc573a;
 }
 
+.button-clear:focus {
+  output: none;
+  color: #1565D8;
+  border: 2px solid #1565D8;
+}
+
 .button-price {
   background-color: #1565D8;
   border-radius: 8px;
@@ -422,6 +428,12 @@ img {
 .button-price:active {
   background-color: #fc573a;
   border: 2px solid #fc573a;
+}
+
+.button-price:focus {
+  output: none;
+  background-color: #1565D8;
+  border: 2px solid #1565D8;
 }
 
 .logo {
@@ -470,13 +482,48 @@ img {
   outline-offset: 0;
 }
 
+label.invalid {
+  color: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 55px;
+  background-color: #1565D8;
+  padding: 3px;
+  border-radius: 5px;
+  z-index: 1;
+  text-decoration: none;
+}
+
+label.invalid::before {
+  content: "";
+  border: 20px solid;
+  position: absolute;
+  top: -30px;
+  left: 4px;
+  border-color: #1565D8 transparent transparent;
+  border-left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: -1;
+}
+
+label.invalid[for="name"] {
+  top: 40px;
+  left: 0px;
+}
+
+label.invalid[for="phone"] {
+  top: 40px;
+  left: 0;
+}
+
 .navbar {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background-color: #fff;
-  z-index: 50;
+  z-index: 999;
 }
 
 .navbar-wrapper {
@@ -817,12 +864,13 @@ img {
 }
 
 .trends-price__link {
+  margin-top: 12px;
   fill: #aaa9a9;
   cursor: pointer;
 }
 
 .trends-price__link--active {
-  fill: #fd0000;
+  fill: #fc573a;
 }
 
 .trends__btn-price {
@@ -870,6 +918,11 @@ img {
 .trends__btn-price:active {
   background-color: #fc573a;
   border: 2px solid #fc573a;
+}
+
+.trends__btn-price:focus {
+  background-color: #183B56;
+  border: 2px solid #183B56;
 }
 
 .trends-top {
@@ -1275,12 +1328,12 @@ img {
   width: 14px;
   height: 19px;
   fill: #1565D8;
-  margin-bottom: 30px;
+  margin-top: 27px;
   cursor: pointer;
 }
 
 .history__img--active {
-  fill: #FF0000;
+  fill: #fc573a;
 }
 
 .cooperation {
@@ -1456,7 +1509,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .blog-wrapper__subtitle {
@@ -1525,6 +1578,21 @@ img {
 
 .blog-wrapper__read:active {
   color: #fc573a;
+}
+
+.blog__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog__link:hover {
+  color: #FAAD13;
+  text-decoration: none;
+}
+
+.blog__link:active {
+  color: #fc573a;
+  text-decoration: none;
 }
 
 .stock {
@@ -1785,6 +1853,22 @@ img {
   color: #5A7184;
 }
 
+.thankyou {
+  padding-top: 200px;
+}
+
+.thankyou__title {
+  font-size: 25px;
+}
+
+.thankyou__button {
+  padding: 13px;
+  margin-top: 15px;
+  display: block;
+  width: 25.3%;
+  text-decoration: none;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -1792,7 +1876,7 @@ img {
   bottom: 0;
   left: 0;
   background-color: rgba(186, 186, 186, 0.555);
-  z-index: 100;
+  z-index: 9999;
   visibility: hidden;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -1815,7 +1899,7 @@ img {
           transform: translate(-50%, -50%);
   color: #ffffff;
   border-radius: 8px;
-  z-index: 110;
+  z-index: 10000;
   visibility: hidden;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -2057,6 +2141,9 @@ img {
   }
   .footer__still {
     margin-left: 70px;
+  }
+  .thankyou__button {
+    width: 30.3%;
   }
 }
 
@@ -2356,6 +2443,9 @@ img {
             order: -1;
     margin-left: 0;
     width: 50%;
+  }
+  .thankyou__button {
+    width: 42%;
   }
 }
 
@@ -2724,6 +2814,10 @@ img {
     width: 260px;
     height: 170px;
   }
+  .history__img {
+    position: absolute;
+    bottom: -42px;
+  }
   .cooperation {
     padding-bottom: 80px;
   }
@@ -2806,6 +2900,13 @@ img {
   }
   .modal__dialog {
     padding: 33px 5%;
+  }
+  .thankyou__title {
+    font-size: 22px;
+    width: 360px;
+  }
+  .thankyou__button {
+    width: 290px;
   }
 }
 
@@ -3033,6 +3134,9 @@ img {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  .history__img {
+    bottom: -31px;
+  }
   .blog-main {
     width: 440px;
   }
@@ -3051,6 +3155,7 @@ img {
   }
   .blog-wrapper__block {
     width: 440px;
+    margin-bottom: 28px;
   }
   .blog-wrapper__subtitle {
     width: 440px;
@@ -3063,10 +3168,17 @@ img {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
-    max-width: 87%;
+    max-width: 89%;
   }
   .navbar-wrapper {
     padding: 18px 0;
+  }
+  .header {
+    padding-top: 100px;
+  }
+  .trends-price__link {
+    margin-top: 9px;
+    margin-right: -12px;
   }
   .card {
     padding-bottom: 140px;
@@ -3084,7 +3196,7 @@ img {
     margin-right: 1px;
   }
   .card__slide:nth-child(odd) {
-    width: 102% !important;
+    width: 101% !important;
   }
   .card__slide:nth-child(even) {
     margin-right: 6px;
@@ -3295,7 +3407,7 @@ img {
     height: 120px;
   }
   .blog-wrapper__item-1 {
-    margin-bottom: 29px;
+    margin-bottom: 27px;
   }
   .blog-wrapper__subtitle {
     letter-spacing: -0.7px;
@@ -3380,7 +3492,7 @@ img {
     line-height: 20px;
   }
   .footer__product {
-    padding-left: 1%;
+    padding-left: 2%;
     padding-right: 10%;
     margin-bottom: 24px;
   }
@@ -3402,7 +3514,7 @@ img {
     margin-bottom: 15px;
   }
   .footer__company {
-    padding-left: 1%;
+    padding-left: 2%;
     padding-right: 10%;
   }
   .footer__company-title {
@@ -3470,6 +3582,23 @@ img {
   .modal__info {
     margin-top: 15px;
   }
+  .thankyou {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+  .thankyou__title {
+    font-size: 19px;
+    width: 280px;
+  }
+  .thankyou__button {
+    width: 247px;
+    font-size: 13px;
+  }
+}
+
+label.invalid {
+  font-size: 12px;
+  top: 50px;
 }
 
 @media (max-height: 520px) {

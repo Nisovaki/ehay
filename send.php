@@ -6,29 +6,38 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $message = $_POST['message'];
-$email = $_POST['email'];
 $nameModal = $_POST['nameModal'];
 $phoneModal = $_POST['phoneModal'];
 $emailModal = $_POST['emailModal'];
-
-$subscribeBtn = $_POST['subscribeBtn'];
 $modalBtn = $_POST['modalBtn'];
 
 
-if (isset($modalBtn)) {
-    $title = "Обратная связь";
-    $body = "
-    <b>Имя:</b> $nameModal<br>
-    <b>Телефон:</b> $phoneModal<br>
-    <b>E-mail:</b> $emailModal<br>
-    <b>Сообщение:</b><br>$message
-    ";
-} else {
-    $title = "Новый Email";
-    $body = "
-    <b>E-mail:</b> $email<br>
-    ";
-};
+$title = "Обратная связь";
+$body = "
+<b>Имя:</b> $nameModal<br>
+<b>Телефон:</b> $phoneModal<br>
+<b>E-mail:</b> $emailModal<br>
+<b>Сообщение:</b><br>$message
+";
+
+// if (isset($modalBtn)) {
+//     $title = "Обратная связь";
+//     $body = "
+//     <b>Имя:</b> $nameModal<br>
+//     <b>Телефон:</b> $phoneModal<br>
+//     <b>E-mail:</b> $emailModal<br>
+//     <b>Сообщение:</b><br>$message
+//     ";
+// } else if (isset($subscribeBtn)) {
+//     $title = "Новый Email";
+//     $body = "
+//     <b>E-mail:</b> $email<br>
+//     ";
+// } else {
+//     $title = "---";
+//     $body = "---";
+// };
+
 
 
 // Настройки PHPMailer
@@ -41,15 +50,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'kseniaserbakova02@gmail.com'; // Логин на почте
+    $mail->Host       = 'ssl://smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'Ksushcherbakova0602@yandex.ru'; // Логин на почте
     $mail->Password   = 'oks160595+'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('kseniaserbakova02@gmail.com', 'Оксана Щербакова'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('Ksushcherbakova0602@yandex.ru', 'Оксана Щербакова'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('oksy169516@gmail.com');  
+    $mail->addAddress('oksy169516@yandex.ru');  
 
 // Отправка сообщения
 $mail->isHTML(true);

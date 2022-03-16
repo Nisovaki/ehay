@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ehay</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <div class="navbar-block">
+        <div class="navbar-wrapper">
+          <div class="logo navbar__logo"><a href="https://oshcherbakova.ru/ehay/"><img src="img/navbar/Logo.svg" alt="logo"></a></div>
+
+          <div class="navbar-wrapper__block">
+            <ul class="navbar__menu">
+              <li class="navbar__item">
+                <a href="#trends-anchor" class="navbar__link">Рекомендации</a>
+              </li>
+          
+              <li class="navbar__item">
+                <a href="#unreleased-anchor" class="navbar__link">Книги</a>
+              </li>
+          
+              <li class="navbar__item">
+                <a href="#blog-anchor" class="navbar__link">Блог</a>
+              </li>
+            </ul>
+            <button class="button-clear navbar__button" data-toggle="modal"
+              data-href="#modal-ehay">Получить</button>
+          </div>
+
+          <div class="navbar-top">
+            <ul class="navbar-top__menu--mobile_visible">
+              <li class="navbar-top__item--mobile_visible">
+                <a href="#" class="navbar-top__link--mobile_visible">Рекомендации</a>
+              </li>
+            
+              <li class="navbar-top__item--mobile_visible">
+                <a href="#" class="navbar-top__link--mobile_visible">Книги</a>
+              </li>
+            
+              <li class="navbar-top__item--mobile_visible">
+                <a href="#" class="navbar-top__link--mobile_visible">Блог</a>
+              </li>
+
+              <li class="navbar-top__item--mobile_visible">
+                <button class="button-clear navbar__button--mobile_visible" data-toggle="modal"
+                  data-href="#modal-ehay">Получить</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-button">
+          <button class="menu-button__top">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-block">
+        <div class="header-wrapper">
+          <h1 class="header__title"><span class="header__title-color">Design Theory:</span>
+            The Psychology of Graphic Design Pricing</h1>
+          <h2 class="header__subtitle">книга мишеля янга</h2>
+          <p class="header__text">Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов.
+            Теперь я делюсь своими золотыми стратегиями ценообразования на творческую работу.</p>
+          <div class="header__button">
+            <button class="button-price header__button-price" data-toggle="modal" data-href="#modal-ehay">купить сейчас</button>
+            <button class="button-clear header__button-clear">читать демо</button>
+            <div class="trends-s" id="trends-anchor"></div>
+          </div>
+        </div>
+        
+        <div class="header-img">
+          <img src="img/header/Book-image.webp" alt="Book" class="header-img__book">
+        </div>
+      </div>
+    </div>
+  </header> 
+ 
+  <section class="trends">
+    <div class="container">
+      <div class="trends-wrapper">
+        <div class="trends-reference">
+          <h2 class="trends-reference__title">Рекомендации</h2>
+          <div class="trends-reference__wrapper">
+            <div class="trends-reference__item">
+              <img src="img/trends/Books.webp" alt="Book" class="trends-reference__img">
+              <div class="trends-reference__wrapper-block">
+                <h2 class="trends-reference__subtitle">The World of Abstract Art</h2>
+                <p class="trends-reference__text">Art & Design</p>
+                <p class="trends-reference__price">$25.00</p>
+                <div class="trends-price">
+                  <button class="trends__btn-price trends__btn-price--pt-1" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+                  <!-- <a href="#" class="trends-reference__link">
+                    <div class="trends-reference__price-img"></div>
+                  </a> -->
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="trends-price__link" id="heard" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+        
+            <div class="trends-reference__item">
+              <img src="img/trends/Books-2.webp" alt="Book" class="trends-reference__img">
+              <div class="trends-reference__wrapper-block">
+                <h2 class="trends-reference__subtitle">Educated : a&nbsp;Memoir</h2>
+                <p class="trends-reference__text">Education</p>
+                <p class="trends-reference__price">$28.00</p>
+                <div class="trends-price">
+                  <button class="trends__btn-price trends__btn-price--ml-1" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+                  <!-- <a href="#" class="trends-reference__link">
+                    <div class="trends-reference__price-img"></div>
+                  </a> -->
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="trends-price__link" id="heard2" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+        
+            <div class="trends-reference__item">
+              <img src="img/trends/Books-3.webp" alt="Book" class="trends-reference__img">
+              <div class="trends-reference__wrapper-block">
+                <h2 class="trends-reference__subtitle">The Blue Flowers Ray…</h2>
+                <p class="trends-reference__text">Novel</p>
+                <p class="trends-reference__price">$19.50</p>
+                <div class="trends-price">
+                  <button class="trends__btn-price trends__btn-price--ml-2" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+                  <!-- <a href="#" class="trends-reference__link">
+                    <div class="trends-reference__price-img"></div>
+                  </a> -->
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="trends-price__link" id="heard3" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+        
+            <div class="trends-reference__item">
+              <img src="img/trends/Books-4.webp" alt="Book" class="trends-reference__img">
+              <div class="trends-reference__wrapper-block">
+                <h2 class="trends-reference__subtitle">There There : a&nbsp;Novel by TO</h2>
+                <p class="trends-reference__text">Novel</p>
+                <p class="trends-reference__price">$20.00</p>
+                <div class="trends-price">
+                  <button class="trends__btn-price trends__btn-price--ml-3" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+                  <!-- <a href="#" class="trends-reference__link">
+                    <div class="trends-reference__price-img"></div>
+                  </a> -->
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="trends-price__link" id="heard4" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+        
+            <div class="trends-reference__item">
+              <img src="img/trends/Books-5.webp" alt="Book" class="trends-reference__img">
+              <div class="trends-reference__wrapper-block">
+                <h2 class="trends-reference__subtitle">WMNDFL : The&nbsp;Inspiration</h2>
+                <p class="trends-reference__text">Business</p>
+                <p class="trends-reference__price">$23.00</p>
+                <div class="trends-price">
+                  <button class="trends__btn-price trends__btn-price--ml-4" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+                  <!-- <a href="#" class="trends-reference__link">
+                    <div class="trends-reference__price-img"></div>
+                  </a> -->
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="trends-price__link" id="heard5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+        
+            <div class="trends-reference__item">
+              <img src="img/trends/Books-6.webp" alt="Book" class="trends-reference__img">
+              <div class="trends-reference__wrapper-block">
+                <h2 class="trends-reference__subtitle">Making Things&nbsp;Happen</h2>
+                <p class="trends-reference__text">Motivation</p>
+                <p class="trends-reference__price">$23.00</p>
+                <div class="trends-price">
+                  <button class="trends__btn-price trends__btn-price--ml-5" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+                  <!-- <a href="#" class="trends-reference__link">
+                    <div class="trends-reference__price-img"></div>
+                  </a> -->
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" class="trends-price__link" id="heard6" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.2422 2.46484C15.3086 0.8125 12.4609 1.12891 10.668 2.95703L10 3.66016L9.29688 2.95703C7.53906 1.12891 4.65625 0.8125 2.72266 2.46484C0.507812 4.36328 0.402344 7.73828 2.37109 9.77734L9.19141 16.8086C9.61328 17.2656 10.3516 17.2656 10.7734 16.8086L17.5938 9.77734C19.5625 7.73828 19.457 4.36328 17.2422 2.46484Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="trends-reference__button">Больше рекомендаций</button>
+        </div>
+        
+        <div class="trends-top">
+          <h2 class="trends-top__title">Топ Месяца</h2>
+          <div class="trends-top-wrapper">
+            <div class="trends-top__item">
+              <img src="img/trends/Books-7.webp" alt="book" class="trends-top__img">
+              <div class="trends-top__wrapper-block">
+                <h2 class="trends-top__subtitle">Sprint : Solve, Test in 5 Days</h2>
+                <p class="trends-top__price">$23.00</p>
+                <button class="trends__btn-price trends-top__btn" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+              </div>
+            </div>
+          
+            <div class="trends-top__item">
+              <img src="img/trends/Books-8.webp" alt="book" class="trends-top__img">
+              <div class="trends-top__wrapper-block">
+                <h2 class="trends-top__subtitle">Hacking Growth Break Problem</h2>
+                <p class="trends-top__price">$23.00</p>
+                <button class="trends__btn-price trends-top__btn" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+              </div>
+            </div>
+          
+            <div class="trends-top__item">
+              <img src="img/trends/Books-9.webp" alt="book" class="trends-top__img">
+              <div class="trends-top__wrapper-block">
+                <h2 class="trends-top__subtitle">Very Nice a Novel by Mercy</h2>
+                <p class="trends-top__price">$23.00</p>
+                <button class="trends__btn-price trends-top__btn" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+              </div>
+            </div>
+          
+            <div class="trends-top__item">
+              <img src="img/trends/Books-10.webp" alt="book" class="trends-top__img">
+              <div class="trends-top__wrapper-block">
+                <h2 class="trends-top__subtitle">Hooked : How to Build Products</h2>
+                <p class="trends-top__price">$23.00</p>
+                <button class="trends__btn-price trends-top__btn" data-toggle="modal" data-href="#modal-ehay">Купить</button>
+              </div>
+            </div>
+            <button class="trends-top__button">лучшие книги</button>
+          </div>
+        </div>
+      </div>
+      <div class="trends-line"></div>
+    </div>
+  </section>
+  
+  <section class="card">
+    
+    <div class="container">
+      <div class="card-slider">
+        <div class="swiper card-swiper card-swiper2">
+          <div class="swiper-wrapper card-wrapper">
+            <div class="swiper-slide card__slide">
+              <div class="card__item">
+                <img src="img/trends/card/chart.svg" alt="Icon: group" class="card__item-img">
+              </div>
+              <h3 class="card__title">Бизнес & Финансы</h3>
+              <p class="card__text">Книги про мир бизнеса</p>
+            </div>
+            <div class="swiper-slide card__slide">
+              <div class="card__item">
+                <img src="img/trends/card/diamond.svg" alt="Icon: diamond" class="card__item-img">
+              </div>
+              <h3 class="card__title">Самомотиватия</h3>
+              <p class="card__text card__text--mt-1">Книги о мотивации</p>
+            </div>
+            <div class="swiper-slide card__slide">
+              <div class="card__item">
+                <img src="img/trends/card/book.svg" alt="Icon: book" class="card__item-img">
+              </div>
+              <h3 class="card__title">Романы Теленовеллы</h3>
+              <p class="card__text">Книги с крутыми историями</p>
+            </div>
+            <div class="swiper-slide card__slide">
+              <div class="card__item">
+                <img src="img/trends/card/group.svg" alt="Icon: chart" class="card__item-img">
+              </div>
+              <h3 class="card__title">Навыки будущего</h3>
+              <p class="card__text">Книги для самоподготовки</p>
+            </div>
+            <div class="swiper-slide card__slide">
+              <div class="card__item">
+                <img src="img/trends/card/chart.svg" alt="Icon: group" class="card__item-img">
+              </div>
+              <h3 class="card__title">Бизнес & Финансы</h3>
+              <p class="card__text">Книги про мир бизнеса</p>
+            </div>
+            <div class="swiper-slide card__slide card__slide-6">
+              <div class="card__item">
+                <img src="img/trends/card/diamond.svg" alt="Icon: diamond" class="card__item-img">
+              </div>
+              <h3 class="card__title">Самомотиватия</h3>
+              <p class="card__text card__text--mt-1">Книги о мотивации</p>
+            </div>
+            <div class="swiper-slide card__slide">
+              <div class="card__item">
+                <img src="img/trends/card/book.svg" alt="Icon: book" class="card__item-img">
+              </div>
+              <h3 class="card__title">Романы Теленовеллы</h3>
+              <p class="card__text">Книги с крутыми историями</p>
+            </div>
+            <div class="swiper-slide card__slide">
+              <div class="card__item">
+                <img src="img/trends/card/group.svg" alt="Icon: chart" class="card__item-img">
+              </div>
+              <h3 class="card__title">Навыки будущего</h3>
+              <p class="card__text">Книги для самоподготовки</p>
+              <div class="unreleased-s" id="unreleased-anchor"></div>
+            </div>
+            
+          </div>
+          <div class="button-block">
+            <button class="card-button-prev card-button" id="card__button-prev"></button>
+            <button class="card-button-next card-button" id="card__button-next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="unreleased">
+    <div class="container">
+      <h2 class="unreleased__title">Неизданные книги</h2>
+      <div class="unreleased-slider">
+        <div class="swiper unreleased-swiper">
+          <button class="unreleased__button--prev unreleased__button unreleased__button--prev--hidden" id="unreleased-button-prev"></button>
+          <button class="unreleased__button--next unreleased__button" id="unreleased-button-next"></button>
+
+          <div class="swiper-wrapper unreleased-wrapper">
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-1.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-2.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-3.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-4.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-5.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-1.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-2.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-3.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-4.webp" alt="Book" class="unreleased-img"></div>
+            <div class="swiper-slide unreleased__slide"><img src="img/unreleased/book-5.webp" alt="Book" class="unreleased-img"></div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+  
+  <section class="history">
+    <div class="history-container">
+      <div class="history-block">
+        <div class="history-block__title">История Автора</div>
+        <p class="history-block__text">Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. 
+          Расскажем всем о&nbsp;закулисье их книг.</p>
+      </div>
+
+      <div class="history__wrapper">
+        <div class="history__item-video" >
+          <script src="https://www.youtube.com/iframe_api"></script>
+          <img src="img/history/Image.jpg" alt="video-1" class="history__item-img-1 video-play" id="player1">
+        </div>
+
+        <div class="history__item">
+          <div class="history__list">
+            <div class="history__list-img">
+              <img src="img/history/Image2.jpg" alt="video-2" class="history__item-img video-play-2" id="player2">
+            </div>
+            <div class="history__list-block">
+              <div class="history__list-text">
+                <h3 class="history__subtitle">Emelda Scandroot</h3>
+                <!-- <img src="img/history/Icon.svg" alt="icon: Add to Favorites" class="history__img"> -->
+                <svg class="history__img" id="markIcon" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z">
+                  </path>
+                </svg>
+              </div>
+              <p class="history__text">Author of Books Tittle</p>
+            </div>
+          </div>
+          <div class="history__list">
+            <div class="history__list-img">
+              <img src="img/history/Image3.jpg" alt="video-3" class="history__item-img video-play-3" id="player3">
+            </div>
+            <div class="history__list-block history__list-block-ml-1">
+              <div class="history__list-text">
+                <h3 class="history__subtitle">Mar Rueda</h3>
+                <!-- <img src="img/history/Icon.svg" alt="icon: Add to Favorites" class="history__img"> -->
+                <svg class="history__img" id="markIcon2" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z">
+                  </path>
+                </svg>
+              </div>
+              <p class="history__text">Author of Books Tittle</p>
+            </div>
+          </div>
+          <div class="history__list">
+            <img src="img/history/Image4.jpg" alt="video-4" class="history__item-img video-play-4" id="player4">
+            <div class="history__list-block">
+              <div class="history__list-text">
+                <h3 class="history__subtitle">Nembo Lukeni</h3>
+                <!-- <img src="img/history/Icon.svg" alt="icon: Add to Favorites" class="history__img"> -->
+                <svg class="history__img" id="markIcon3" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z">
+                  </path>
+                </svg>
+              </div>
+              <p class="history__text">Author of Books Tittle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cooperation">
+    <div class="container">
+      <h2 class="cooperation__title">Некоторые из издателей, с которыми мы сотрудничали</h2>
+      <div class="cooperation-wrapper">
+        <div class="cooperation-wrapper__block-1">
+          <img src="img/cooperation/slack.png" alt="Icon: slack" class="cooperation-icon-1">
+          <img src="img/cooperation/netflix.png" alt="Icon: netflix" class="cooperation-icon-2">
+          <img src="img/cooperation/fitbit.png" alt="Icon: fitbit" class="cooperation-icon-3">
+          <img src="img/cooperation/google.png" alt="Icon: google" class="cooperation-icon-4">
+          <img src="img/cooperation/airbnb.png" alt="Icon: airbnb" class="cooperation-icon-5">
+          <img src="img/cooperation/uber.png" alt="Icon: uber" class="cooperation-icon-6">
+        </div>
+
+        <div class="cooperation-wrapper__block-2">
+          <img src="img/cooperation/netflix.png" alt="Icon: netflix" class="cooperation-icon-7">
+          <img src="img/cooperation/airbnb.png" alt="Icon: airbnb" class="cooperation-icon-8">
+          <img src="img/cooperation/slack.png" alt="Icon: slack" class="cooperation-icon-9">
+          <img src="img/cooperation/uber.png" alt="Icon: uber" class="cooperation-icon-10">
+          <img src="img/cooperation/fitbit.png" alt="Icon: fitbit" class="cooperation-icon-11">
+          <img src="img/cooperation/google.png" alt="Icon: google" class="cooperation-icon-12">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="blog-s" id="blog-anchor"></div>
+  
+  <section class="blog">
+    <div class="container">
+      <div class="blog-main">
+        <h2 class="blog__title">Ehya Блог</h2>
+        <button class="button-clear blog__button">Все Блоги</button>
+      </div>
+
+      <div class="blog-wrapper">
+        <div class="blog-wrapper__item-1">
+          <a href="#" class="link"><img src="img/blog/Shape.webp" alt="blog" class="blog-wrapper__item-img"></a>
+          <h3 class="blog-wrapper__subtitle"><a href="#" class="blog__link">Success Steps For Your Business Life</a> </h3>
+          <p class="blog-wrapper__text">This is the author story section. Every week we try to give you the story of book writer. Tell all of you the behind the
+          scene of their books.</p>
+        </div>
+        <div class="blog-wrapper__item-2">
+          <div class="blog-wrapper__block">
+            <a href="#" class="link"><img src="img/blog/Image.webp" alt="blog" class="blog-wrapper__img"></a>
+            <div class="blog-wrapper__text-block">
+              <div class="blog-wrapper__date">23 марта 2020</div>
+              <h3 class="blog-wrapper__title"><a href="#" class="blog__link">29 Motivational Quotes
+              for Work Environments</a></h3>
+              <div class="blog-wrapper__read">Читать</div>
+            </div>
+          </div>
+
+          <div class="blog-wrapper__block">
+            <a href="#" class="link"><img src="img/blog/Image-2.webp" alt="blog" class="blog-wrapper__img"></a>
+            <div class="blog-wrapper__text-block">
+              <div class="blog-wrapper__date">28 марта 2020</div>
+              <h3 class="blog-wrapper__title"><a href="#" class="blog__link">Learn To Love Growth
+              and&nbsp;You Will Be A Success</a></h3>
+              <div class="blog-wrapper__read">Читать</div>
+            </div>
+          </div>
+
+          <div class="blog-wrapper__block">
+            <a href="#" class="link"><img src="img/blog/Image-3.webp" alt="blog" class="blog-wrapper__img"></a>
+            <div class="blog-wrapper__text-block">
+              <div class="blog-wrapper__date">28 марта 2020</div>
+              <h3 class="blog-wrapper__title"><a href="#" class="blog__link">Motivation How To Build
+              Trust at your Work</a></h3>
+              <div class="blog-wrapper__read">Читать</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stock">
+    <div class="container stock-container">
+      <div class="stock-wrapper">
+        <h2 class="stock-wrapper__title">Будь первым, кто узнает о&nbsp;наших акциях</h2>
+        <form action="send-second.php" class="form" method="POST">
+          <div class="stock-wrapper__block">
+            <img src="img/stock/Icon.svg" alt="Icon: Email" class="stock-wrapper__icon">
+            <input type="text" class="stock-wrapper__input" placeholder="Ваш Emaill" name="email">
+            <button class="stock-wrapper__button" name="subscribeBtn">Регистрация</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-wrapper__list">
+          <a href="https://oshcherbakova.ru/ehay/"><img src="img/navbar/Logo.svg" alt="Logo" class="logo footer__logo"></a>
+          <p class="footer-wrapper__text">Создайте современный и креативный веб-сайт с crealand</p>
+          <div class="footer__icon">
+            <div class="footer__icon-wrapper">
+              <a href="https://www.google.ru/" target="_blank"><img src="img/footer/google.svg" alt="Icon: google" class="footer__icon-google"></a>
+            </div>
+            <div class="footer__icon-wrapper">
+              <a href="https://twitter.com/" target="_blank"><img src="img/footer/twitter.svg" alt="Icon: twitter" class="footer__icon-twitter"></a>
+            </div>
+            <div class="footer__icon-wrapper">
+              <a href="https://www.instagram.com/" target="_blank"><img src="img/footer/instagram.svg" alt="Icon: instagram" class="footer__icon-instagram"></a>
+            </div>
+            <div class="footer__icon-wrapper">
+              <a href="https://ru.linkedin.com/" target="_blank"><img src="img/footer/linkedIn.svg" alt="Icon: twitter" class="footer__icon-linkedIn"></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer__product">
+          <h3 class="footer__product-title footer-title">Продукт</h3>
+          <ul class="footer__product-list footer__list">
+            <li class="footer__product-item ">
+              <a href="#" class=" footer-link">Лэндинг</a>
+            </li>
+            <li class="footer__product-item ">
+              <a href="#" class=" footer-link">Функции</a>
+            </li>
+            <li class="footer__product-item ">
+              <a href="#" class=" footer-link">Документация</a>
+            </li>
+            <li class="footer__product-item ">
+              <a href="#" class=" footer-link">Скидки</a>
+            </li>
+            <li class="footer__product-item ">
+              <a href="#" class=" footer-link">Расценки</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer__services">
+          <h3 class="footer-title footer__services-title">Сервисы</h3>
+          <ul class="footer__list footer__services-list">
+            <li class="footer__services-item ">
+              <a href="#" class=" footer-link">Документация</a>
+            </li>
+            <li class="footer__services-item ">
+              <a href="#" class=" footer-link">Дизайн</a>
+            </li>
+            <li class="footer__services-item ">
+              <a href="#" class=" footer-link">Темы</a>
+            </li>
+            <li class="footer__services-item ">
+              <a href="#" class=" footer-link">Илюстрации</a>
+            </li>
+            <li class="footer__services-item ">
+              <a href="#" class=" footer-link">UI Kit</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer__company">
+          <h3 class="footer__company-title footer-title">Компания</h3>
+          <ul class="footer__company-list footer__list">
+            <li class="footer__company-item ">
+              <a href="#" class=" footer-link">О нас</a>
+            </li>
+            <li class="footer__company-item ">
+              <a href="#" class=" footer-link">Условия</a>
+            </li>
+            <li class="footer__company-item ">
+              <a href="#" class=" footer-link">Privacy Policy</a>
+            </li>
+            <li class="footer__company-item ">
+              <a href="#" class=" footer-link">Careers</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer__still">
+          <h3 class="footer__still-title footer-title">Еще..</h3>
+          <ul class="footer__still-list footer__list">
+            <li class="footer__still-item ">
+              <a href="#" class=" footer-link">Документация</a>
+            </li>
+            <li class="footer__still-item ">
+              <a href="#" class=" footer-link">Лицензия</a>
+            </li>
+            <li class="footer__still-item ">
+              <a href="#" class=" footer-link">Изменения</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-heart">
+        <img src="img/footer/Heart.svg" alt="Heart" class="footer-heart__img">
+        <p class="footer-heart__text">Copyright © 2019. Crafted with love.</p>
+      </div>
+    </div>
+  </footer>
+
+    <div class="modal" id="modal-ehay">
+      <div class="modal__overlay">
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="img/modal/close.svg" alt="Icon: Close" loading="lazy">
+          </a>
+          <h3 class="modal__title">Обратная связь</h3>
+          <form action="send.php" method="POST" class="modal__form form">
+            <div class="modal-wrapper">
+              <input type="text" name="nameModal" class="input modal__input" placeholder="Имя *" required
+                minlength="2">
+            </div>
+            <div class="modal-wrapper">
+              <input type="tel" name="phoneModal" class="input modal__input phone" placeholder="Телефон *" required>
+            </div>
+            <div class="modal-wrapper">
+              <input type="email" name="emailModal" class="input modal__input" placeholder="Email *" required>
+            </div>
+      
+            <textarea name="message" class="message modal__message" placeholder="Сообщение"></textarea>
+            <div class="modal__button-block">
+              <button class="button modal__button btn-interactive" type="submit" name="modalBtn">
+                Отправить
+              </button>
+              <span class="modal__info">* Обязательное поле</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ 
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

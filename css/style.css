@@ -343,7 +343,7 @@ template {
 
 @font-face {
   font-family: 'Roboto Bold';
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("/ehay/fonts/Roboto-Bold.woff2") format("woff2"), url("/ehay/fonts/Roboto-Bold.woff") format("woff");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("/fonts/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -351,7 +351,7 @@ template {
 
 @font-face {
   font-family: 'Roboto Medium';
-  src: local("Roboto Medium"), local("Roboto-Medium"), url("/ehay/fonts/Roboto-Medium.woff2") format("woff2"), url("/ehay/fonts/Roboto-Medium.woff") format("woff");
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("/fonts/Roboto-Medium.woff2") format("woff2"), url("/fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -359,7 +359,7 @@ template {
 
 @font-face {
   font-family: 'Open Sans';
-  src: local("Open Sans"), local("OpenSans"), url("/ehay/fonts/OpenSans.woff2") format("woff2"), url("/ehay/fonts/OpenSans.woff") format("woff");
+  src: local("Open Sans"), local("OpenSans"), url("/fonts/OpenSans.woff2") format("woff2"), url("/fonts/OpenSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1026,83 +1026,6 @@ label.invalid[for="phone"] {
   margin-bottom: 61px;
 }
 
-.card-slider {
-  position: relative;
-}
-
-.card__slide {
-  background-color: #fff;
-  border: 1px solid #ECEEF2;
-  border-radius: 8px;
-  height: 240px;
-}
-
-.card-wrapper {
-  position: relative;
-}
-
-.card__item {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.card__item-img {
-  width: 64px;
-  height: 64px;
-}
-
-.card__title {
-  text-align: center;
-  font-size: 22px;
-  line-height: 32px;
-  font-family: 'Roboto Medium';
-  margin-top: 36px;
-  letter-spacing: 0.2px;
-  margin-bottom: 0;
-}
-
-.card__text {
-  text-align: center;
-  font-size: 16px;
-  line-height: 22px;
-  color: #5A7184;
-  margin-top: 12px;
-  margin-bottom: 0;
-}
-
-.card-button {
-  z-index: 555;
-  position: absolute;
-  cursor: pointer;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  width: 56px;
-  height: 56px;
-  background-color: #fff;
-  border-radius: 50%;
-  border: none;
-  -webkit-box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
-}
-
-.card-button-prev {
-  top: 49%;
-  left: -25px;
-  background-image: url(../img/trends/card/prev.svg);
-}
-
-.card-button-next {
-  top: 50%;
-  right: -29px;
-  background-image: url(../img/trends/card/next.svg);
-}
-
-.swiper {
-  position: static;
-}
-
 .card {
   padding-bottom: 100px;
 }
@@ -1175,7 +1098,7 @@ label.invalid[for="phone"] {
 }
 
 .card-button-prev--hidden {
-  display: none;
+  opacity: 0;
 }
 
 .card-button-prev:focus, .card-button-prev:active {
@@ -1189,7 +1112,7 @@ label.invalid[for="phone"] {
 }
 
 .card-button-next--hidden {
-  display: none;
+  opacity: 0;
 }
 
 .card-button-next:focus, .card-button-next:active {
@@ -1208,6 +1131,11 @@ label.invalid[for="phone"] {
 
 .unreleased-slider {
   position: relative;
+}
+
+.unreleased-slider--hidden {
+  display: block;
+  opacity: 0.1;
 }
 
 .unreleased-img {
@@ -1246,10 +1174,20 @@ label.invalid[for="phone"] {
   background-repeat: no-repeat;
 }
 
+.unreleased__button--prev--hidden {
+  display: block;
+  opacity: 0.1;
+}
+
 .unreleased__button--next {
   right: -4px;
   background-image: url(../img/unreleased/next.svg);
   background-repeat: no-repeat;
+}
+
+.unreleased__button--next--hidden {
+  display: block;
+  opacity: 0.1;
 }
 
 .history {
@@ -2479,9 +2417,6 @@ label.invalid[for="phone"] {
   .thankyou__button {
     width: 42%;
   }
-}
-
-@media (max-width: 900px) {
   .navbar__link:hover {
     color: #183B56;
   }
@@ -2512,7 +2447,11 @@ label.invalid[for="phone"] {
     background-color: #1565D8;
     border: 2px solid #1565D8;
   }
-  .trends__btn-price {
+  .trends__btn-price:hover {
+    background-color: #183B56;
+    border: 2px solid #183B56;
+  }
+  .trends__btn-price:active {
     background-color: #183B56;
     border: 2px solid #183B56;
   }
@@ -2545,6 +2484,12 @@ label.invalid[for="phone"] {
   }
   .blog-wrapper__read:active {
     color: #1565D8;
+  }
+  .blog__link:hover {
+    color: inherit;
+  }
+  .blog__link:active {
+    color: inherit;
   }
   .stock-wrapper__button:hover {
     background-color: #FAAD13;

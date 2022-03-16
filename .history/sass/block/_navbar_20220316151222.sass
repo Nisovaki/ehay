@@ -1,0 +1,60 @@
+.navbar
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  background-color: #fff
+  z-index: 999
+  &-wrapper
+    padding: 34px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__block
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &--mobile
+        &_visible
+          
+  &__menu
+    list-style-type: none
+    display: flex
+    margin-right: 63px
+  &__item
+    margin-right: 22px
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.5px
+    &:last-child
+      margin-right: 0
+  &__link
+    text-decoration: none
+    color: $title-colors
+    &:hover
+      color: $title-color-head
+    &:active
+      color: $active-color
+  &__button
+    padding: 11px 33px 11px 32px
+    letter-spacing: 0.5px
+    cursor: pointer
+.menu-button
+  display: none
+  &__top
+    border: none
+    background-color: transparent
+    display: flex
+    flex-direction: column
+    cursor: pointer
+    width: 22px
+    height: 20px
+    justify-content: space-between
+    padding: 0
+    margin-right: 6px
+    margin-bottom: 1px
+  &__line
+    width: 22px
+    height: 2px
+    background-color: $title-colors

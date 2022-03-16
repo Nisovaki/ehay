@@ -442,7 +442,7 @@ img {
 }
 
 .swiper-button-disabled {
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .input {
@@ -549,6 +549,14 @@ label.invalid[for="phone"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.navbar-top {
+  display: none;
+}
+
+.navbar-top__block--mobile_visible {
+  display: none;
 }
 
 .navbar__menu {
@@ -1166,10 +1174,26 @@ label.invalid[for="phone"] {
   background-image: url(../img/trends/card/prev.svg);
 }
 
+.card-button-prev--hidden {
+  display: none;
+}
+
+.card-button-prev:focus, .card-button-prev:active {
+  outline: none;
+}
+
 .card-button-next {
   top: 50%;
   right: -29px;
   background-image: url(../img/trends/card/next.svg);
+}
+
+.card-button-next--hidden {
+  display: none;
+}
+
+.card-button-next:focus, .card-button-next:active {
+  outline: none;
 }
 
 .swiper {
@@ -1880,6 +1904,7 @@ label.invalid[for="phone"] {
   visibility: hidden;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__overlay--visible {
@@ -1891,7 +1916,7 @@ label.invalid[for="phone"] {
   position: fixed;
   top: 50%;
   left: 50%;
-  min-height: 487px;
+  max-height: 100%;
   max-width: 100%;
   padding: 31px 89px 31px 89px;
   background-color: #f8f8f9;
@@ -1903,6 +1928,7 @@ label.invalid[for="phone"] {
   visibility: hidden;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
@@ -2061,6 +2087,9 @@ label.invalid[for="phone"] {
   }
   .card-button-next {
     right: -16px;
+  }
+  .unreleased-slider {
+    margin-left: 60px;
   }
   .history-container {
     max-width: 993px;
@@ -2240,6 +2269,9 @@ label.invalid[for="phone"] {
   }
   .trends-line {
     width: 100%;
+  }
+  .unreleased-slider {
+    margin-left: 0px;
   }
   .card-button {
     width: 56px;
@@ -2464,7 +2496,19 @@ label.invalid[for="phone"] {
     color: #1565D8;
     border: 2px solid #1565D8;
   }
-  .button-price {
+  .button-clear:focus {
+    color: #1565D8;
+    border: 2px solid #1565D8;
+  }
+  .button-price:hover {
+    background-color: #1565D8;
+    border: 2px solid #1565D8;
+  }
+  .button-price:active {
+    background-color: #1565D8;
+    border: 2px solid #1565D8;
+  }
+  .button-price:focus {
     background-color: #1565D8;
     border: 2px solid #1565D8;
   }
@@ -2544,6 +2588,12 @@ label.invalid[for="phone"] {
             align-items: center;
   }
   .navbar-wrapper__block {
+    display: none;
+  }
+  .navbar-top__block--mobile {
+    height: 100%;
+  }
+  .navbar-top__block--mobile_visible {
     display: block;
     overflow: scroll;
     position: fixed;
@@ -2554,12 +2604,8 @@ label.invalid[for="phone"] {
     padding-top: 40px;
     background-color: #e8f0fb;
     width: 100%;
-    height: 100%;
   }
-  .navbar-wrapper__block--mobile_visible {
-    display: none;
-  }
-  .navbar__menu--mobile_visible {
+  .navbar-top__menu--mobile_visible {
     margin: 0;
     padding: 0;
     -webkit-box-orient: vertical;
@@ -2569,15 +2615,39 @@ label.invalid[for="phone"] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .navbar__item--mobile_visible {
+  .navbar-top__item--mobile_visible {
     margin: 0;
     margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+  }
+  .navbar-top__item--mobile_visible:last-child {
+    margin-right: 0;
+  }
+  .navbar-top__link--mobile_visible {
+    text-decoration: none;
+    color: #183B56;
+  }
+  .navbar-top__link--mobile:hover {
+    color: #FAAD13;
+  }
+  .navbar-top__link--mobile:active {
+    color: #fc573a;
   }
   .navbar__button--mobile_visible {
     display: block;
     margin: auto;
     margin-top: 40px;
+    padding: 11px 33px 11px 32px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
   }
   .menu-button {
     display: block;
@@ -2773,7 +2843,7 @@ label.invalid[for="phone"] {
   }
   .history {
     padding-top: 70px;
-    padding-bottom: 80px;
+    padding-bottom: 130px;
   }
   .history-block {
     margin-left: 0;
@@ -2802,6 +2872,11 @@ label.invalid[for="phone"] {
     width: 260px;
     margin-bottom: 22px;
   }
+  .history__list-text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .history__item {
     width: 279px;
     margin-left: -152px;
@@ -2817,6 +2892,12 @@ label.invalid[for="phone"] {
   .history__img {
     position: absolute;
     bottom: -42px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .history__text {
+    text-align: center;
   }
   .cooperation {
     padding-bottom: 80px;
@@ -3097,6 +3178,7 @@ label.invalid[for="phone"] {
   }
   .history {
     padding-top: 60px;
+    padding-bottom: 80px;
   }
   .history__wrapper {
     padding-bottom: 590px;
@@ -3172,6 +3254,9 @@ label.invalid[for="phone"] {
   }
   .navbar-wrapper {
     padding: 18px 0;
+  }
+  .navbar-top__block--mobile_visible {
+    top: 64px;
   }
   .header {
     padding-top: 100px;
@@ -3605,7 +3690,6 @@ label.invalid {
   .modal__dialog {
     padding: 15px 5%;
     min-height: auto;
-    overflow: scroll;
     width: auto;
   }
   .modal__form {
@@ -3636,10 +3720,10 @@ label.invalid {
     margin-top: 7px;
     min-height: auto;
     margin-bottom: 7px;
-    width: 186px;
+    width: 198px;
   }
   .modal__button {
-    width: 186px;
+    width: 198px;
   }
   .modal__button-block {
     -webkit-box-orient: vertical;
